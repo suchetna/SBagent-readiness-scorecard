@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="100-Point Self-Assessment: Are You Agent-Ready? Evaluate your organization's readiness for agent-based commerce.">
+    <meta name="keywords" content="agent commerce, AI marketing, digital transformation, API readiness, structured data">
+    <meta name="author" content="Agent Commerce Assessment">
+    <title>Agent Readiness Scorecard - 100-Point Self-Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scorecard-container">
+        <div class="scorecard-header">
+            <div class="scorecard-title">Agent Readiness Scorecard</div>
+            <div class="scorecard-subtitle">100-Point Self-Assessment: Are You Agent-Ready?</div>
+            <div class="total-points" id="totalScore">Total: 0 / 100 Points</div>
+        </div>
+
+        <div class="scorecard-body">
+            <div class="instructions">
+                <div class="instructions-text">
+                    ✓ Check each box that applies to your organization's current state<br>
+                    📊 Your total score indicates your readiness for agent-based commerce
+                </div>
+            </div>
+
+            <!-- API Completeness -->
+            <div class="category-section">
+                <div class="category-header">
+                    <div class="category-title">
+                        <span class="category-icon">🔌</span>
+                        <span>API Completeness</span>
+                    </div>
+                    <div class="category-points">25 pts</div>
+                </div>
+                <ul class="criteria-list">
+                    <li class="criteria-item" data-points="10">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">All product data accessible via API</div>
+                        <div class="criteria-points">10 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="8">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Real-time inventory exposed through API</div>
+                        <div class="criteria-points">8 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="5">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Pricing + promotions programmatically accessible</div>
+                        <div class="criteria-points">5 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="2">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Returns/warranty information via API</div>
+                        <div class="criteria-points">2 pts</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Response Latency -->
+            <div class="category-section" data-exclusive="true">
+                <div class="category-header">
+                    <div class="category-title">
+                        <span class="category-icon">⚡</span>
+                        <span>Response Latency</span>
+                    </div>
+                    <div class="category-points">20 pts</div>
+                </div>
+                <ul class="criteria-list">
+                    <li class="criteria-item" data-points="20">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">API response time &lt;50ms (optimal)</div>
+                        <div class="criteria-points">20 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="15">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">API response time 50-100ms (good)</div>
+                        <div class="criteria-points">15 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="8">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">API response time 100-300ms (acceptable)</div>
+                        <div class="criteria-points">8 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="0">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">API response time &gt;300ms (critical issue)</div>
+                        <div class="criteria-points">0 pts</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Structured Data Coverage -->
+            <div class="category-section" data-exclusive="true">
+                <div class="category-header">
+                    <div class="category-title">
+                        <span class="category-icon">📋</span>
+                        <span>Structured Data Coverage</span>
+                    </div>
+                    <div class="category-points">20 pts</div>
+                </div>
+                <ul class="criteria-list">
+                    <li class="criteria-item" data-points="20">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">100% of catalog has schema.org markup</div>
+                        <div class="criteria-points">20 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="15">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">75-99% schema.org coverage</div>
+                        <div class="criteria-points">15 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="10">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">50-74% schema.org coverage</div>
+                        <div class="criteria-points">10 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="5">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">&lt;50% schema.org coverage</div>
+                        <div class="criteria-points">5 pts</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Protocol Support -->
+            <div class="category-section" data-exclusive="true">
+                <div class="category-header">
+                    <div class="category-title">
+                        <span class="category-icon">🔗</span>
+                        <span>Protocol Support</span>
+                    </div>
+                    <div class="category-points">15 pts</div>
+                </div>
+                <ul class="criteria-list">
+                    <li class="criteria-item" data-points="15">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">ACP/AP2 protocol integration implemented</div>
+                        <div class="criteria-points">15 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="8">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">OpenAPI 3.0+ specification published</div>
+                        <div class="criteria-points">8 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="3">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Basic REST API only (no advanced protocols)</div>
+                        <div class="criteria-points">3 pts</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Real-Time Accuracy -->
+            <div class="category-section">
+                <div class="category-header">
+                    <div class="category-title">
+                        <span class="category-icon">✓</span>
+                        <span>Real-Time Accuracy</span>
+                    </div>
+                    <div class="category-points">20 pts</div>
+                </div>
+                <ul class="criteria-list">
+                    <li class="criteria-item" data-points="10">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Inventory data ±0 discrepancy (perfect sync)</div>
+                        <div class="criteria-points">10 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="5">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Pricing updates propagate in &lt;1 minute</div>
+                        <div class="criteria-points">5 pts</div>
+                    </li>
+                    <li class="criteria-item" data-points="5">
+                        <div class="criteria-checkbox"></div>
+                        <div class="criteria-text">Delivery estimates consistently accurate</div>
+                        <div class="criteria-points">5 pts</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Scoring Guide -->
+            <div class="scoring-guide">
+                <div class="scoring-title">Your Score Interpretation</div>
+                <div class="scoring-tier">
+                    <div class="tier-range">90-100 pts</div>
+                    <div class="tier-label tier-leader">Agent-ready leader — you're ahead of the curve</div>
+                </div>
+                <div class="scoring-tier">
+                    <div class="tier-range">70-89 pts</div>
+                    <div class="tier-label tier-competitive">Competitive but vulnerable — close the gaps fast</div>
+                </div>
+                <div class="scoring-tier">
+                    <div class="tier-range">50-69 pts</div>
+                    <div class="tier-label tier-gaps">Serious gaps — urgent action needed now</div>
+                </div>
+                <div class="scoring-tier">
+                    <div class="tier-range">&lt;50 pts</div>
+                    <div class="tier-label tier-invisible">Functionally invisible to agents — critical risk</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-text">Ready to get your detailed assessment?</div>
+            <a href="#" class="cta-button">Take the Full Assessment →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
